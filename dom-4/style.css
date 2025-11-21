@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+main .card {
+  height: 390px;
+  width: 260px;
+  padding: 10px 50px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .card img {
+  height: 150px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+main h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+main h4 {
+  font-size: 1.1rem;
+  text-align: center;
+  color: red;
+  white-space: nowrap;
+}
+main h5 {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  margin: 5px;
+}
+main p {
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
