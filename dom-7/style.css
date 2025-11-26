@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(90, 83, 83);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .all-rels {
+  height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+  scroll-snap-type: y mandatory;
+}
+main .all-rels .reel {
+  height: 610px;
+  width: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+}
+main .all-rels .reel .mutedd {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0%;
+  text-align: center;
+  background-color: rgba(38, 39, 39, 0.612);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .all-rels .reel .mutedd i {
+  font-size: 25px;
+  color: white;
+  pointer-events: none;
+}
+main .all-rels .reel video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .all-rels .reel .right {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  width: 10px;
+  gap: 10px;
+  text-align: center;
+}
+main .all-rels .reel .right .right > div {
+  width: 10px;
+}
+main .all-rels .reel .right .like .love {
+  color: red;
+}
+main .all-rels .reel .right h4,
+main .all-rels .reel .right h6 {
+  pointer-events: none;
+}
+main .all-rels .reel .right i {
+  font-size: 25px;
+  font-weight: 200;
+}
+main .all-rels .reel .right h6 {
+  font-size: 16px;
+  font-weight: 200;
+}
+main .all-rels .reel .right i {
+  font-size: 25px;
+  font-weight: 200;
+}
+main .all-rels .reel .right h6 {
+  font-size: 16px;
+  font-weight: 200;
+}
+main .all-rels .reel .bottom {
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 2rem;
+  padding: 10px;
+}
+main .all-rels .reel .bottom .top {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main .all-rels .reel .bottom .top h3 {
+  font-weight: 300;
+}
+main .all-rels .reel .bottom .top button {
+  padding: 5px 8px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+main .all-rels .reel .bottom .top .round {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main .all-rels .reel .bottom .top .round img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .all-rels .reel .bottom p {
+  color: white;
+  width: 70%;
+  font-size: 18px;
+}
+main .all-rels::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

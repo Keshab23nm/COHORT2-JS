@@ -72,10 +72,23 @@ let people = [
   }
 ];
 
+console.log(people);
 
 sum='';
 people.forEach(function(val,inx){
- sum=sum+` <div class="card"> <img src="${val.image}" alt=""><h3>${val.fullName}</h3><h4>${val.profession}</h4> <h5>${people[inx].tags}</h5><p>${val.description}</p></div>`;
+console.log(val.fullName);
+
+let kes='';
+val.tags.forEach(function(elem){
+// console.log(elem);
+
+kes=kes+`<h5>${elem}</h5>`;
+
+});
+
+console.log(kes);
+
+  sum=sum+` <div class="card"> <img src="${val.image}" alt=""><h3>${val.fullName}</h3><h4>${val.profession}</h4> ${kes}<p>${val.description}</p></div>`;
 console.log(inx);
 //  console.log(val.tags);
 console.log(people[inx].tags);
